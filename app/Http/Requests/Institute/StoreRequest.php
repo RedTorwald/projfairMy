@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Http\Requests\Institute;
+
+use App\Http\Requests\BaseRequest;
+
+
+class StoreRequest extends BaseRequest
+{
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [ //TODO body
+            'priority' => 'integer',
+        ];
+    }
+}
